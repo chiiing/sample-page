@@ -1,3 +1,4 @@
+
 const ballSpeed = 5;
 const BALL_RADIUS = 15;
 
@@ -28,10 +29,10 @@ function setup() {
 }
 
 function draw() {
-	
+  
 //background stipes
 
-	background(170,189,140);
+  background(170,189,140);
   noStroke();
   for (var i = 0; i < height; i += 20) {
   fill(62,105,144);
@@ -42,8 +43,6 @@ function draw() {
 
   textSize(8);
   textStyle(BOLD);
-  text('Player 1 : UPKEY and DOWNKEY', 450, 39);
-  text('Player 2 : W and S', 150, 39);
    
   noStroke();
   rect(PADDLE_WIDTH * 2, player1Position, PADDLE_WIDTH, PADDLE_HEIGHT);
@@ -52,7 +51,7 @@ function draw() {
   fill(240, 236, 235);
   textFont('Helvetica');
   textSize(40);
-  text(player1Score + "  :  " + player2Score, width / 2, 40);
+  text(player1Score + "  :  " + player2Score, width / 2, 60);
   handlePaddles();
   handleBall();
   gameOver();
